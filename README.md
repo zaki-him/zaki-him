@@ -1,7 +1,8 @@
 # 💫 About Me:
 - I'm a 2nd year CS student<br>
 - I basically try to learn a bit of everything<br>
-- Currently, I'm focusing on Back-end development & building solid apps
+- Currently, I'm focusing on Back-end development & building solid apps<br>
+- Feel free to reach me at [zakariahimrane@outlook.com](mailto:zakariahimrane@outlook.com)
 
 
 ## 🌐 Socials:
