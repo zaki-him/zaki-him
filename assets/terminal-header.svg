@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 250" width="850" height="250" shape-rendering="crispEdges">
+  <defs>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000000" fill-opacity="0.22"/>
+    </pattern>
+    <pattern id="pixelGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" stroke="#00ff41" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+    <style>
+      .mono {
+        font-family: ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', 'Liberation Mono', Menlo, Monaco, Consolas, monospace;
+      }
+      .title-text {
+        fill: #00ff41;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+      .cmd-prompt {
+        fill: #00ff41;
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .cmd-text {
+        fill: #e6edf3;
+        font-size: 15px;
+      }
+      .sub-text {
+        fill: #7ee787;
+        font-size: 14px;
+      }
+      .dim-text {
+        fill: #56d364;
+        font-size: 12px;
+        opacity: 0.75;
+      }
+      .cursor {
+        fill: #00ff41;
+        animation: blink 1s steps(1, end) infinite;
+      }
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <!-- Outer Pixel Frame -->
+  <rect x="0" y="0" width="850" height="250" fill="#05080b"/>
+  <!-- Pixel notched border -->
+  <rect x="8" y="4" width="834" height="4" fill="#00ff41"/>
+  <rect x="8" y="242" width="834" height="4" fill="#00ff41"/>
+  <rect x="4" y="8" width="4" height="234" fill="#00ff41"/>
+  <rect x="842" y="8" width="4" height="234" fill="#00ff41"/>
+
+  <!-- Inner screen -->
+  <rect x="12" y="12" width="826" height="226" fill="#0b1015"/>
+  <rect x="12" y="12" width="826" height="226" fill="url(#pixelGrid)"/>
+
+  <!-- Terminal Title Bar -->
+  <rect x="12" y="12" width="826" height="30" fill="#111b15"/>
+  <rect x="12" y="42" width="826" height="2" fill="#00ff41" fill-opacity="0.5"/>
+
+  <!-- Pixel Window Controls -->
+  <rect x="24" y="21" width="10" height="10" fill="#ff5f56"/>
+  <rect x="42" y="21" width="10" height="10" fill="#ffbd2e"/>
+  <rect x="60" y="21" width="10" height="10" fill="#00ff41"/>
+
+  <text x="425" y="31" text-anchor="middle" class="mono title-text">zakaria@github: ~/profile — tty1 [80x24]</text>
+
+  <!-- Pixel Art Terminal Mascot / CRT Icon (Right side) -->
+  <g transform="translate(690, 68)">
+    <!-- Monitor casing -->
+    <rect x="8" y="0" width="104" height="8" fill="#00ff41"/>
+    <rect x="0" y="8" width="8" height="72" fill="#00ff41"/>
+    <rect x="112" y="8" width="8" height="72" fill="#00ff41"/>
+    <rect x="8" y="80" width="104" height="8" fill="#00ff41"/>
+    <!-- Screen -->
+    <rect x="8" y="8" width="104" height="72" fill="#071a0d"/>
+    <!-- Pixel Face >_ -->
+    <!-- '>' chevron -->
+    <rect x="24" y="24" width="8" height="8" fill="#00ff41"/>
+    <rect x="32" y="32" width="8" height="8" fill="#00ff41"/>
+    <rect x="40" y="40" width="8" height="8" fill="#00ff41"/>
+    <rect x="32" y="48" width="8" height="8" fill="#00ff41"/>
+    <rect x="24" y="56" width="8" height="8" fill="#00ff41"/>
+    <!-- '_' blinking block -->
+    <rect x="56" y="56" width="28" height="8" class="cursor"/>
+    <!-- Stand -->
+    <rect x="44" y="88" width="32" height="10" fill="#00ff41" fill-opacity="0.75"/>
+    <rect x="24" y="98" width="72" height="8" fill="#00ff41"/>
+    <!-- Pixel LED -->
+    <rect x="96" y="70" width="6" height="6" fill="#39d353"/>
+  </g>
+
+  <!-- Pixelated Name Banner: ZAKARIA (block letters, 6px pixel unit) -->
+  <g transform="translate(32, 62)" fill="#00ff41">
+    <!-- Z -->
+    <rect x="0" y="0" width="30" height="6"/><rect x="24" y="6" width="6" height="6"/><rect x="18" y="12" width="6" height="6"/><rect x="12" y="18" width="6" height="6"/><rect x="6" y="24" width="6" height="6"/><rect x="0" y="30" width="30" height="6"/>
+    <!-- A -->
+    <rect x="44" y="0" width="18" height="6"/><rect x="38" y="6" width="6" height="30"/><rect x="62" y="6" width="6" height="30"/><rect x="44" y="18" width="18" height="6"/>
+    <!-- K -->
+    <rect x="76" y="0" width="6" height="36"/><rect x="94" y="0" width="6" height="6"/><rect x="88" y="6" width="6" height="6"/><rect x="82" y="12" width="6" height="12"/><rect x="88" y="24" width="6" height="6"/><rect x="94" y="30" width="6" height="6"/>
+    <!-- A -->
+    <rect x="114" y="0" width="18" height="6"/><rect x="108" y="6" width="6" height="30"/><rect x="132" y="6" width="6" height="30"/><rect x="114" y="18" width="18" height="6"/>
+    <!-- R -->
+    <rect x="146" y="0" width="24" height="6"/><rect x="146" y="6" width="6" height="30"/><rect x="170" y="6" width="6" height="12"/><rect x="152" y="18" width="18" height="6"/><rect x="164" y="24" width="6" height="6"/><rect x="170" y="30" width="6" height="6"/>
+    <!-- I -->
+    <rect x="184" y="0" width="18" height="6"/><rect x="190" y="6" width="6" height="24"/><rect x="184" y="30" width="18" height="6"/>
+    <!-- A -->
+    <rect x="216" y="0" width="18" height="6"/><rect x="210" y="6" width="6" height="30"/><rect x="234" y="6" width="6" height="30"/><rect x="216" y="18" width="18" height="6"/>
+  </g>
+
+  <!-- Boot & Intro Terminal Lines -->
+  <text x="32" y="126" class="mono dim-text">[  OK  ] Mounted ~/github-profile. Session initialized.</text>
+
+  <text x="32" y="156" class="mono cmd-prompt">zakaria@github:~$</text>
+  <text x="195" y="156" class="mono cmd-text">./whoami --role</text>
+
+  <text x="32" y="182" class="mono sub-text">&gt; Full-Stack Developer &amp; Terminal Enthusiast</text>
+  <text x="32" y="204" class="mono cmd-text">  Building fast web apps, CLI tools &amp; open-source software.</text>
+
+  <text x="32" y="226" class="mono cmd-prompt">zakaria@github:~$</text>
+  <rect x="195" y="213" width="10" height="15" class="cursor"/>
+
+  <!-- CRT Scanline Overlay -->
+  <rect x="12" y="12" width="826" height="226" fill="url(#scanlines)"/>
+</svg>
