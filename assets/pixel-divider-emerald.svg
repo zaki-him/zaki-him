@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 18" width="850" height="18" shape-rendering="crispEdges">
+  <rect width="850" height="18" fill="none"/>
+  <!-- Left emerald pixel rail -->
+  <rect x="0" y="8" width="350" height="2" fill="#059669" fill-opacity="0.65"/>
+  <!-- Center emerald pixel diamonds -->
+  <rect x="364" y="7" width="4" height="4" fill="#059669"/>
+  <rect x="380" y="6" width="6" height="6" fill="#10b981"/>
+  <rect x="402" y="7" width="46" height="4" fill="#34d399"/>
+  <rect x="464" y="6" width="6" height="6" fill="#10b981"/>
+  <rect x="482" y="7" width="4" height="4" fill="#059669"/>
+  <!-- Right emerald pixel rail -->
+  <rect x="500" y="8" width="350" height="2" fill="#059669" fill-opacity="0.65"/>
+</svg>
